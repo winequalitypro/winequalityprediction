@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="content_container">
+    <div class="content">
+        <h2>Contact Information</h2>
+        <p>If you have any questions, suggestions, or concerns, please feel free to reach out to our administrator.</p>
+        <h2>Contact Form</h2>
+        <form action="/contactadmin" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+             <br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Send Message</button>
+            <br>
+        </form>
+    </div>
+</div>
+<div id="quote">
+    <h2>Feel free to connect with us; together, let's craft exceptional wine of the highest quality.</h2>
+</div>
+
+<div class="admin-profile">
+    <img src="../static/background/3glass.PNG" alt="Admin Photo" class="circular-photo">
+    <div class="admin-info">
+      <h2>Bibek karki</h2>
+      <p>Email: bibekkarki@gmail.com</p>
+      <p>Role: Administrator</p>
+      <!-- Add other information as needed -->
+    </div>
+    <div class="admin-profile">
+        <img src="../static/background/3glass.PNG" alt="Admin Photo" class="circular-photo">
+        <div class="admin-info">
+          <h2>Rajiv Thakuri</h2>
+          <p>Email: rajivthakuri@gmail.com</p>
+          <p>Role: Administrator</p>
+          <!-- Add other information as needed -->
+        </div>
+        <div class="admin-profile">
+            <img src="../static/background/3glass.PNG" alt="Admin Photo" class="circular-photo">
+            <div class="admin-info">
+              <h2>Ramraja partap budha</h2>
+              <p>Email: Ramraja@gmail.com</p>
+              <p>Role: Administrator</p>
+              <!-- Add other information as needed -->
+            </div>
+          
+        </div>
+    </div>       
+</div>
+  
+
+
+
+
+{% endblock body %}
+
+
+
+
+
+
+
+

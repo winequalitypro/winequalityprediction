@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan:400,700&display=swap");
+* {
+  margin: 0px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Spartan, sans-serif;
+  font-size: 12px;
+  background-color: white;
+}
+#background {
+  min-height: 100vh;
+  /* background: #c9ced3; */
+  background-image: url(./background/lamoimage.jpg);
+  background-size: cover;
+  background-position: top right;
+  margin-top: 20px;
+}
+
+#nav_container {
+  text-align: center;
+}
+
+#nav_container {
+  padding: 15px 50px 15px 50px;
+  background-color: white;
+  padding: 10px 70px 10px 70px;
+}
+
+#nav_container ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 20px 5px 20px;
+  /* font-size: 30px; */
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transform: translateY(0);
+ 
+}
+#nav_container ul li:hover{
+  transform: translateY(1px);
+} 
+
+
+#nav_container ul li a{
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+ 
+}
+#nav_container ul li a:hover{
+  color:#9e2a9c;
+}
+
+
+
+
+#quote {
+  margin: 40px 0px;
+  /* background-color: #CE93D8; */
+  background-image: linear-gradient(
+    90deg,
+    rgb(66, 66, 145),
+    rgb(157, 61, 61) 60%
+  );
+  height: 20vh;
+}
+
+#quote h2 {
+  padding: 60px;
+  color: white;
+}
+
+#fun_facts_container {
+  text-align: center;
+  display: inline-block;
+  width: 90%;
+  margin-left: 100px;
+}
+
+#fun_facts {
+  display: inline-block;
+  width: 25%;
+  padding: 20px;
+  margin: 20px;
+  height: 50vh;
+  background-image: url(./background/lamoimage.jpg);
+  border-radius: 15px;
+  border: 4px solid rgb(157, 61, 61);
+}
+
+#fun_facts h2 {
+  color: black;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* contactadmin css */
+
+.content_container {
+  background-image: url(./background/darkbg.jpg);
+  margin-top: 20px;
+}
+.content {
+  border: 4px solid rgb(157, 61, 61);
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  padding: 15px;
+  background-image: url(./background/contactadmin.jpg);
+}
+.content h2 {
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.content label {
+  font-size: 16px;
+  font-weight: bold;
+}
+.content input {
+  font-size: 16px;
+  width: 40%;
+  margin-bottom: 10px;
+}
+/* admincss */
+.admin-profile {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto 5px;
+ 
+}
+
+.circular-photo {
+  border-radius: 50%;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  margin-right: 20px; /* Add some spacing between the photo and information */
+}
+
+/* about us page css */
+
+.aboutus_container {
+  background-image: url(./background/grapes.jpg);
+  margin-top: 20px;
+}
+
+.aboutus {
+  color: white;
+  border: 4px solid rgb(157, 61, 61);
+  text-align: center;
+  width: 50%;
+  height: 300px;
+  margin: auto;
+  padding: 15px;
+  background-image: url(./background/darkbg.jpg);
+  background-position: right bottom;
+  /* background-size: 900px 400px; */
+}
+
+.aboutus p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.aboutusextra {
+  padding: 0px;
+  padding-top: 5px;
+}
+/* 
+predict pagecss */
+
+.prediction_container {
+  background-image: url(./background/predict2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+}
+.prediction {
+  height: fit-content;
+  text-align: right;
+}
+
+.prediction form,
+h2 {
+  margin-right: 80px;
+}
+.prediction label {
+  font-size: 14px;
+  font-weight: bold;
+  width: 30%;
+}
+.prediction input {
+  font-size: 14px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+/* login page css */
+
+.login_container_container {
+  background-image: url(./background/Capture1.PNG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.login_container {
+  filter: blur(0px);
+  height: 40%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 90px;
+}
+
+.picture {
+  background-image: url(./background/predict.jpg);
+  width: 304px;
+  height: 407px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login {
+  border: 4px solid rgb(157, 61, 61);
+  text-align: center;
+  background-image: url(./background/aboutus3.jpg);
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.login h2 {
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.login label {
+  font-size: 20px;
+  font-weight: bold;
+  width: 50%;
+}
+.login input {
+  font-size: 20px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+
+
+/* footercss */
+/* Style the footer container */
+.site-footer {
+  /* background-image: linear-gradient(
+    90deg,
+    rgb(66, 66, 145),
+    rgb(157, 61, 61) 60%
+  ); */
+
+  background-image: url(../static/background/footer.jpg);
+  background-color: purple;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 50px;
+  background-size: cover;
+  background-position: top;
+
+}
+
+/* Center the content in the container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style the widgets within the footer */
+.footer-widgets {
+  display: flex;
+  justify-content: space-between;
+}
+
+.widget {
+  width: 30%;
+}
+
+/* Style the About Us section */
+.widget h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Style the Contact Us section */
+.widget p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Style the Follow Us section */
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Style the bottom bar with copyright information */
+.bottom-bar {
+/* background-image:url(../static/background/darkbg.jpg); */
+
+background-color: rgb(157, 61, 61);
+  padding: 10px 0;
+}
+
+.bottom-bar p {
+  color: #fff;
+  font-size: 12px;
+}
+
+.bottom-bar a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+
+/* buttoncss */
+/* Basic Button Styles */
+button[type="submit"] {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 15px auto;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid rgb(157, 61, 61);
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(157, 61, 61);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Hover State */
+button:hover {
+  background-color:rgb(157, 61, 61);
+  color: #fff;
+  border-color: #fff;
+  transform: translateY(1px);
+}
