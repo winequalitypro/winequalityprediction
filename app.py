@@ -11,7 +11,6 @@ from RandomForest import RandomForest
 from sklearn.metrics import accuracy_score
 from dotenv import load_dotenv
 import os
-import uvicorn
 
 load_dotenv(dotenv_path="wine.env")
 secret_key = os.environ.get("SECRET_KEY")
@@ -190,4 +189,3 @@ if __name__ == '__main__':
     with app.app_context():
         db.create_all()
     app.run(debug=False)
-uvicorn.run(app, host="0.0.0.0", port=5000)
